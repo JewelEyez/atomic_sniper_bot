@@ -1,7 +1,7 @@
 const assetID = "1099600019671"; //The asset you want to buy
 const desiredPrice = "110000000"; //The price you want to buy it for, in WAX
-const privateKeys = ["YOUR_PRIVATE_KEY_HERE"];
-const actor = "your_wax_address"; //the address that has the authority to make these transactions
+const privateKeys = ["5JvrmPq1zwjmuNWF8urW6EiLoxfMi9mG1TJjkFYD7T3Khmmw9L"];
+const actor = "jeweleyezwax"; //the address that has the authority to make these transactions
 
 const axios = require("axios");
 const { Api, JsonRpc } = require("eosjs");
