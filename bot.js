@@ -1,6 +1,6 @@
-const assetID = "1099600019671"; //The asset you want to buy
-const desiredPrice = "110000000"; //The price you want to buy it for, in WAX
-const privateKeys = ["5JvrmPq1zwjmuNWF8urW6EiLoxfMi9mG1TJjkFYD7T3Khmmw9L"];
+const assetID = "741942"; //The asset you want to buy
+const desiredPrice = "0.167700000"; //The price you want to buy it for, in WAX
+const privateKeys = ["PVT_K1_iNzTEsJsSzEP7LgSgHPxivuvpctpBwvMNjHMwk1JnvFyo3tEDL"];
 const actor = "jeweleyezwax"; //the address that has the authority to make these transactions
 
 const axios = require("axios");
@@ -55,7 +55,7 @@ getSales().then((data) => {
       let waxToPay = price.slice(0, -8) + "." + price.slice(-8) + " WAX";
       let firstChar = waxToPay.charAt(0);
       if (firstChar == ".") {
-        waxToPay = "0" + waxToPay;
+        waxToPay = `0${waxToPay}`;
       }
 
       console.log("\nWAX TO PAY: \n" + waxToPay + "It's a good WAX deal!");
